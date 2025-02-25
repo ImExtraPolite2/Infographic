@@ -1,4 +1,37 @@
+@font-face {
+  font-family: 'HankenGrotesk';
+  src: url(assets/HankenGrotesk.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: 'HankenGrotesk';
+}
+
+#black-hole-background {
+  position: fixed;
+  right: 0;
+  bottom: -150px;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: relative;
+  color: white;
+}
+
+.intro {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 8rem;
+  }
 }
