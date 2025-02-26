@@ -3,6 +3,11 @@
   src: url(assets/HankenGrotesk.ttf);
 }
 
+@font-face {
+  font-family: 'RobotoCondensed';
+  src: url(assets/RobotoCondensed.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -34,4 +39,61 @@
   h1 {
     font-size: 8rem;
   }
+
+  p {
+    font-size: 2rem;
+  }
+
+  img {
+    position: absolute;
+    width: 60px;
+    bottom: 105vh;
+  }
+}
+
+.facts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.facts > div {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+
+  h1 {
+    font-family: 'RobotoCondensed';
+    font-size: 4.5rem;
+  }
+
+  p {
+    font-size: 1.7rem;
+  }
+}
+
+.up,
+.down {
+  height: 200px;
+  display: flex;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.up > img,
+.down > img {
+  width: 80px;
+  fill: white;
+}
+
+.fact {
+  width: 40vw;
+}
+
+.eight > ul {
+  margin: 0 30px;
+}
+
+.eight > ul > li {
+  font-size: 1.8rem;
 }
