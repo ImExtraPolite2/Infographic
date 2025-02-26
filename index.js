@@ -51,4 +51,10 @@ function hideFacts() {
   });
 }
 
+gsap.to('.title', {
+  duration: 3,
+  text: 'What is a Blackhole??',
+  ease: 'none',
+});
+
 hideFacts();
