@@ -52,8 +52,8 @@ function hideFacts() {
 }
 
 gsap.to('.title', {
-  duration: 3,
-  text: 'What is a Blackhole??',
+  duration: 2,
+  text: 'BLACKHOLES',
   ease: 'none',
 });
 
