@@ -9,6 +9,7 @@ const classNames = [
   'seven',
   'eight',
 ];
+
 let num = 1;
 
 function hideFacts() {
