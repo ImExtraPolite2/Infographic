@@ -113,3 +113,17 @@
     bottom: 105vh;
   }
 }
+
+@keyframes hide {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    left: -50px;
+    opacity: 0.5;
+  }
+  100% {
+    left: -100px;
+    opacity: 1;
+  }
+}

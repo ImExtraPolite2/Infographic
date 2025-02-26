@@ -30,6 +30,7 @@ function hideFacts() {
     allFacts.forEach((fact) => {
       if (fact.classList.contains(classNames[num])) {
         fact.style.display = 'block';
+        fact.style.animation = 'hide 500ms linear';
       } else {
         fact.style.display = 'none';
       }
@@ -42,6 +43,7 @@ function hideFacts() {
     allFacts.forEach((fact) => {
       if (fact.classList.contains(classNames[num])) {
         fact.style.display = 'block';
+        fact.style.animation = 'hide 500ms linear';
       } else {
         fact.style.display = 'none';
       }
