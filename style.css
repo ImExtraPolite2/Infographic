@@ -84,6 +84,12 @@
 .down > img {
   width: 80px;
   fill: white;
+  transition: all 100ms;
+}
+
+.up > img:hover,
+.down > img:hover {
+  transform: scale(1.2);
 }
 
 .fact {
