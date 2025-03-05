@@ -27,6 +27,18 @@
   color: white;
 }
 
+.space-ship {
+  position: fixed;
+  bottom: -500px;
+  left: 500px;
+  z-index: 0;
+
+  animation: moveShip 2000ms linear infinite both;
+  img {
+    width: 100px;
+  }
+}
+
 .intro {
   background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
@@ -133,5 +145,15 @@
   100% {
     left: -100px;
     opacity: 1;
+  }
+}
+
+@keyframes moveShip {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: translatex(450px) translatey(-900px) rotate(360deg);
+    opacity: 0.5;
   }
 }

@@ -59,3 +59,5 @@ gsap.to('.title', {
 });
 
 hideFacts();
+setup();
+draw();
