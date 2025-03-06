@@ -92,6 +92,28 @@ function playSound() {
   });
 }
 
+function showNotice() {
+  const musicButton = document.querySelector('.off-button');
+  const musicButtonOuter = document.querySelector('.off-outer');
+  const playNotice = document.querySelector('.play-notice');
+
+  musicButton.addEventListener('mouseenter', () => {
+    playNotice.style.display = 'block';
+  });
+
+  musicButton.addEventListener('mouseleave', () => {
+    playNotice.style.display = 'none';
+  });
+
+  musicButtonOuter.addEventListener('mouseenter', () => {
+    playNotice.style.display = 'block';
+  });
+
+  musicButtonOuter.addEventListener('mouseleave', () => {
+    playNotice.style.display = 'none';
+  });
+}
+
 gsap.to('.title', {
   duration: 2,
   text: 'BLACKHOLES',
@@ -100,3 +122,4 @@ gsap.to('.title', {
 
 hideFacts();
 playSound();
+showNotice();

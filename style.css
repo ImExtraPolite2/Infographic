@@ -60,6 +60,15 @@
   border-radius: 25px;
 }
 
+.play-notice {
+  width: 140px;
+  position: absolute;
+  top: 0px;
+  right: 60px;
+  color: white;
+  display: none;
+}
+
 .content {
   position: relative;
   color: white;
