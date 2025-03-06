@@ -10,7 +10,7 @@ const classNames = [
   'eight',
 ];
 
-let num = 1;
+let num = 0;
 
 function hideFacts() {
   const allFacts = document.querySelectorAll('.fact');
@@ -28,6 +28,10 @@ function hideFacts() {
   goUp.addEventListener('click', () => {
     num--;
 
+    if (num < 1) {
+      num = 7;
+    }
+
     allFacts.forEach((fact) => {
       if (fact.classList.contains(classNames[num])) {
         fact.style.display = 'block';
@@ -41,6 +45,10 @@ function hideFacts() {
   goDown.addEventListener('click', () => {
     num++;
 
+    if (num > 7) {
+      num = 0;
+    }
+
     allFacts.forEach((fact) => {
       if (fact.classList.contains(classNames[num])) {
         fact.style.display = 'block';
@@ -53,9 +61,35 @@ function hideFacts() {
 }
 
 function playSound() {
-  const blackHoleSounds = new Audio('assets/black-hole-sound.mp3');
+  const blackHoleSounds = new Audio('assets/alien.mp3');
+  const musicButton = document.querySelector('.off-button');
+  const musicButtonOuter = document.querySelector('.off-outer');
 
-  blackHoleSounds.play();
+  musicButtonOuter.addEventListener('click', () => {
+    if (musicButtonOuter.className === 'off-outer') {
+      musicButtonOuter.className = 'on-outer';
+      musicButton.className = 'on-button';
+      blackHoleSounds.play();
+    } else {
+      musicButtonOuter.className = 'off-outer';
+      musicButton.className = 'off-button';
+      blackHoleSounds.pause();
+      blackHoleSounds.currentTime = 0;
+    }
+  });
+
+  musicButton.addEventListener('click', () => {
+    if (musicButtonOuter.className === 'off-outer') {
+      musicButtonOuter.className = 'on-outer';
+      musicButton.className = 'on-button';
+      blackHoleSounds.play();
+    } else {
+      musicButtonOuter.className = 'off-outer';
+      musicButton.className = 'off-button';
+      blackHoleSounds.pause();
+      blackHoleSounds.currentTime = 0;
+    }
+  });
 }
 
 gsap.to('.title', {
@@ -65,5 +99,4 @@ gsap.to('.title', {
 });
 
 hideFacts();
-setup();
-draw();
+playSound();

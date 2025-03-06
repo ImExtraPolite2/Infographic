@@ -22,6 +22,44 @@
   min-height: 100%;
 }
 
+.play-sound {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.off-button {
+  width: 0;
+  padding: 15px;
+  background-color: red;
+  border-radius: 25px;
+  position: absolute;
+}
+
+.off-outer {
+  width: 0;
+  padding: 15px 30px;
+  background-color: lightcoral;
+  border-radius: 25px;
+}
+
+.on-button {
+  width: 0;
+  padding: 15px;
+  background-color: green;
+  border-radius: 25px;
+  position: absolute;
+  right: 0;
+}
+
+.on-outer {
+  width: 0;
+  padding: 15px 30px;
+  background-color: lightgreen;
+  border-radius: 25px;
+}
+
 .content {
   position: relative;
   color: white;
@@ -110,12 +148,20 @@
   width: 40vw;
 }
 
-.eight > ul {
+.seven > ul {
   margin: 0 30px;
 }
 
-.eight > ul > li {
+.seven > ul > li {
   font-size: 1.8rem;
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
 }
 
 .go-down {
