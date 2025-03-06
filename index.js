@@ -52,6 +52,12 @@ function hideFacts() {
   });
 }
 
+function playSound() {
+  const blackHoleSounds = new Audio('assets/black-hole-sound.mp3');
+
+  blackHoleSounds.play();
+}
+
 gsap.to('.title', {
   duration: 2,
   text: 'BLACKHOLES',

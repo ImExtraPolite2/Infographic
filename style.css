@@ -29,11 +29,11 @@
 
 .space-ship {
   position: fixed;
-  bottom: -500px;
-  left: 500px;
+  top: 150px;
+  left: -200px;
   z-index: 0;
 
-  animation: moveShip 2000ms linear infinite both;
+  animation: moveShip 5000ms linear infinite both;
   img {
     width: 100px;
   }
@@ -152,8 +152,13 @@
   0% {
     opacity: 1;
   }
+  80% {
+    transform: translatex(1000px) translatey(50px) rotate(360deg);
+    opacity: 1;
+  }
   100% {
-    transform: translatex(450px) translatey(-900px) rotate(360deg);
-    opacity: 0.5;
+    transform: translatex(1100px) translatey(100px) rotate(360deg)
+      skewX(-100deg);
+    opacity: 0;
   }
 }
