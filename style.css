@@ -199,7 +199,7 @@
     opacity: 1;
   }
   80% {
-    transform: translatex(60vw) translatey(50px) rotate(360deg);
+    transform: translatex(1000%) translatey(50px) rotate(360deg);
     opacity: 1;
   }
   100% {
