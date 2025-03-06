@@ -209,7 +209,7 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1700px) {
   @keyframes moveShip {
     0% {
       opacity: 1;
